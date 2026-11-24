@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<TabPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.Modulo1Controller" tabClosingPolicy="UNAVAILABLE">
+  <Tab text="Teoría">
+    <TextArea fx:id="txtTeoria" editable="false" wrapText="true" styleClass="mono"/>
+  </Tab>
+  <Tab text="Práctica">
+    <VBox spacing="10" styleClass="barra">
+      <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="n:" styleClass="etiqueta"/>
+        <TextField fx:id="txtN" text="1000000" prefWidth="140"/>
+        <ComboBox fx:id="cmbMetodo" prefWidth="210"/>
+        <Button text="Ejecutar" onAction="#ejecutar" styleClass="btn-primario"/>
+        <Button text="Comparar (promedio de 20)" onAction="#comparar"/>
+      </HBox>
+      <TableView fx:id="tabla" VBox.vgrow="ALWAYS"/>
+      <TextArea fx:id="txtAnalisis" editable="false" wrapText="true" prefRowCount="7" styleClass="mono"/>
+    </VBox>
+  </Tab>
+</TabPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.InicioController" styleClass="fondo">
+  <VBox alignment="CENTER" spacing="12" maxWidth="460" maxHeight="-Infinity" styleClass="tarjeta">
+    <StackPane styleClass="logo-caja" prefWidth="90" prefHeight="90" minWidth="90" minHeight="90" maxWidth="90" maxHeight="90">
+      <Label fx:id="lblLogo" text="LOGO" styleClass="sub"/>
+      <ImageView fx:id="imgLogo" fitWidth="80" fitHeight="80" preserveRatio="true"/>
+    </StackPane>
+    <Label text="ESCUELA POLITÉCNICA NACIONAL" styleClass="titulo"/>
+    <Label text="FACULTAD / CARRERA" styleClass="sub"/>
+    <Separator/>
+    <Label text="ESTRUCTURA DE DATOS Y ALGORITMOS II" styleClass="titulo2" wrapText="true"/>
+    <Label text="Laboratorio interactivo de algoritmos" styleClass="sub"/>
+    <Label text="Estudiante:" styleClass="etiqueta"/>
+    <Label text="Jhayr Alexander Pazmiño" styleClass="nombre"/>
+    <Button text="INGRESAR →" maxWidth="Infinity" onAction="#ingresar" styleClass="btn-primario" defaultButton="true"/>
+  </VBox>
+</StackPane>

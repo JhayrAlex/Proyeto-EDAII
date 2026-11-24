@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<TabPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.Modulo2Controller" tabClosingPolicy="UNAVAILABLE">
+  <Tab text="Teoría">
+    <TextArea fx:id="txtTeoria" editable="false" wrapText="true" styleClass="mono"/>
+  </Tab>
+  <Tab text="Práctica">
+    <VBox spacing="10" styleClass="barra">
+      <FlowPane fx:id="botones" hgap="8" vgap="8">
+        <Button text="O(1)" onAction="#seleccionar"/>
+        <Button text="O(log n)" onAction="#seleccionar"/>
+        <Button text="O(n)" onAction="#seleccionar"/>
+        <Button text="O(n log n)" onAction="#seleccionar"/>
+        <Button text="O(n²)" onAction="#seleccionar"/>
+        <Button text="O(2ⁿ)" onAction="#seleccionar"/>
+        <Button text="O(n!)" onAction="#seleccionar"/>
+      </FlowPane>
+      <Label fx:id="lblSeleccion" text="(ninguna seleccionada)" styleClass="etiqueta"/>
+      <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Tamaño n:" styleClass="etiqueta"/>
+        <TextField fx:id="txtN" prefWidth="140"/>
+        <Button text="Ejecutar" onAction="#ejecutar" styleClass="btn-primario"/>
+        <Button text="Graficar crecimiento" onAction="#graficar"/>
+      </HBox>
+      <HBox spacing="10" VBox.vgrow="ALWAYS">
+        <TextArea fx:id="txtSalida" editable="false" wrapText="true" prefWidth="420" styleClass="mono"/>
+        <LineChart fx:id="grafico" title="Operaciones vs n" HBox.hgrow="ALWAYS">
+          <xAxis><NumberAxis label="n" forceZeroInRange="false"/></xAxis>
+          <yAxis><NumberAxis label="Operaciones"/></yAxis>
+        </LineChart>
+      </HBox>
+    </VBox>
+  </Tab>
+</TabPane>

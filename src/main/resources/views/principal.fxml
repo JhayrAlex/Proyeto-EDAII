@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.PrincipalController" styleClass="fondo">
+  <top>
+    <HBox styleClass="encabezado" alignment="CENTER_LEFT" spacing="20">
+      <VBox>
+        <Label text="EDA II – Resumen del Bimestre" styleClass="enc-titulo"/>
+        <Label text="Escuela Politécnica Nacional · Estructura de Datos y Algoritmos II" styleClass="enc-sub"/>
+      </VBox>
+      <Region HBox.hgrow="ALWAYS"/>
+      <Label fx:id="lblEstudiante" styleClass="enc-est"/>
+      <Button text="← Inicio" onAction="#volver"/>
+    </HBox>
+  </top>
+  <left>
+    <VBox fx:id="menu" spacing="8" prefWidth="230" styleClass="menu-lateral">
+      <fx:define><ToggleGroup fx:id="grupo"/></fx:define>
+      <ToggleButton text="1. Eficiencia algorítmica" toggleGroup="$grupo" maxWidth="Infinity" onAction="#abrir"/>
+      <ToggleButton text="2. Análisis de complejidad" toggleGroup="$grupo" maxWidth="Infinity" onAction="#abrir"/>
+      <ToggleButton text="3. Clasificación de problemas" toggleGroup="$grupo" maxWidth="Infinity" onAction="#abrir"/>
+      <ToggleButton text="4. Algoritmos de grafos" toggleGroup="$grupo" maxWidth="Infinity" onAction="#abrir"/>
+    </VBox>
+  </left>
+  <center>
+    <StackPane fx:id="contenido" styleClass="contenido"/>
+  </center>
+</BorderPane>

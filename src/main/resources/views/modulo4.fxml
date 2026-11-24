@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.Modulo4Controller" styleClass="barra">
+  <top>
+    <HBox spacing="10" alignment="CENTER_LEFT" styleClass="barra-sup">
+      <Label text="Algoritmo:" styleClass="etiqueta"/>
+      <ComboBox fx:id="cmbAlgoritmo" prefWidth="270"/>
+      <Label text="Origen:" styleClass="etiqueta"/>
+      <ComboBox fx:id="cmbOrigen" prefWidth="70"/>
+      <Label text="Destino:" styleClass="etiqueta"/>
+      <ComboBox fx:id="cmbDestino" prefWidth="70"/>
+      <Button text="Ejecutar" onAction="#ejecutar" styleClass="btn-primario"/>
+      <Button text="Reiniciar" onAction="#reiniciar"/>
+    </HBox>
+  </top>
+  <center>
+    <StackPane fx:id="areaGrafo" styleClass="panel"/>
+  </center>
+  <right>
+    <VBox spacing="6" prefWidth="360" styleClass="lateral-der">
+      <Label text="Explicación" styleClass="etiqueta"/>
+      <TextArea fx:id="txtExplicacion" editable="false" wrapText="true" prefRowCount="8" styleClass="mono"/>
+      <Label text="Pasos y resultados" styleClass="etiqueta"/>
+      <TextArea fx:id="txtResultados" editable="false" wrapText="true" VBox.vgrow="ALWAYS" styleClass="mono"/>
+    </VBox>
+  </right>
+</BorderPane>

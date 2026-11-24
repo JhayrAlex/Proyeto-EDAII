@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.epn.eda2.controller.Modulo3Controller" spacing="10" styleClass="barra">
+  <HBox fx:id="selector" spacing="8">
+    <fx:define><ToggleGroup fx:id="grupo"/></fx:define>
+    <ToggleButton text="P" toggleGroup="$grupo" onAction="#seleccionar"/>
+    <ToggleButton text="NP" toggleGroup="$grupo" onAction="#seleccionar"/>
+    <ToggleButton text="NP-completo" toggleGroup="$grupo" onAction="#seleccionar"/>
+    <ToggleButton text="NP-difícil" toggleGroup="$grupo" onAction="#seleccionar"/>
+  </HBox>
+  <TextArea fx:id="txtDefinicion" editable="false" wrapText="true" prefRowCount="6" styleClass="mono"/>
+  <GridPane hgap="10" vgap="8">
+    <Label fx:id="lblA" styleClass="etiqueta" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="txtA" prefWidth="420" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label fx:id="lblB" styleClass="etiqueta" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="txtB" prefWidth="420" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label fx:id="lblC" styleClass="etiqueta" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtC" prefWidth="420" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+  </GridPane>
+  <Button text="Ejecutar ejemplo" onAction="#ejecutar" styleClass="btn-primario"/>
+  <TextArea fx:id="txtSalida" editable="false" wrapText="true" VBox.vgrow="ALWAYS" styleClass="mono"/>
+</VBox>

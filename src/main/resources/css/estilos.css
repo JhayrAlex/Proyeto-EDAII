@@ -1,0 +1,33 @@
+.root { -fx-font-family: "Segoe UI", Arial, sans-serif; -fx-font-size: 13px; }
+.fondo { -fx-background-color: #F1F5F9; }
+.tarjeta { -fx-background-color: #FFFFFF; -fx-background-radius: 12; -fx-border-radius: 12;
+           -fx-border-color: #B7C9E2; -fx-padding: 28; }
+.logo-caja { -fx-background-color: #FFFFFF; -fx-border-color: #B7C9E2; -fx-border-radius: 10; -fx-background-radius: 10; }
+.titulo  { -fx-text-fill: #17365D; -fx-font-size: 20px; -fx-font-weight: bold; }
+.titulo2 { -fx-text-fill: #17365D; -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-alignment: center; }
+.sub { -fx-text-fill: #5B7290; -fx-font-size: 12px; }
+.etiqueta { -fx-text-fill: #17365D; -fx-font-weight: bold; }
+.error { -fx-text-fill: #C0392B; }
+
+.button, .toggle-button { -fx-background-color: #2874A6; -fx-text-fill: white; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 7 14; }
+.button:hover, .toggle-button:hover { -fx-background-color: #1F5F88; }
+.btn-primario { -fx-background-color: #17365D; -fx-font-weight: bold; -fx-padding: 10 18; }
+.btn-primario:hover { -fx-background-color: #0F2644; }
+.toggle-button:selected { -fx-background-color: #17365D; -fx-font-weight: bold; }
+
+.text-field, .combo-box-base { -fx-background-radius: 6; -fx-border-color: #B7C9E2; -fx-border-radius: 6; -fx-padding: 6 10; }
+.text-area { -fx-border-color: #CBD5E1; }
+.mono { -fx-font-family: "Consolas", "Monospaced"; -fx-font-size: 12.5px; }
+
+.encabezado { -fx-background-color: #17365D; -fx-padding: 14 22; }
+.enc-titulo { -fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold; }
+.enc-sub { -fx-text-fill: #B7C9E2; -fx-font-size: 12px; }
+.enc-est { -fx-text-fill: white; -fx-font-weight: bold; }
+.menu-lateral { -fx-background-color: #FFFFFF; -fx-padding: 18; -fx-border-color: #CBD5E1; -fx-border-width: 0 1 0 0; }
+.contenido { -fx-padding: 16; }
+.barra { -fx-padding: 12; }
+.barra-sup { -fx-padding: 0 0 10 0; }
+.lateral-der { -fx-padding: 0 0 0 12; }
+.panel { -fx-background-color: #FFFFFF; -fx-border-color: #CBD5E1; -fx-border-radius: 8; -fx-background-radius: 8; }
+
+.nombre { -fx-text-fill: #2874A6; -fx-font-size: 20px; -fx-font-weight: bold; }
